@@ -1,0 +1,24 @@
+- topic: Machine Learning and Biology
+  lecturers:
+    - name: J. Fernandez de Cossio-Diaz
+    - name: C. Lucibello
+    - name: A. Pagnani
+    - name: M. Weigt
+
+- topic: Metabolism, Microbial Ecology and miRNA Interactions
+  lecturers:
+    - name: C. Bosia
+    - name: D. de Martino
+    - name: A. Fuentes
+    - name: J. Grilli
+
+- topic: Epidemiology
+  lecturers:
+    - name: L. Ferreti
+    - name: C. Colijn
+
+- topic: Single Cell Experiments and Data Processing
+  lecturers:
+    - name: D. Thieffry
+    - name: L. Martingnetti
+    - name: Gautier Stoll

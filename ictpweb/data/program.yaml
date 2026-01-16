@@ -1,0 +1,15 @@
+- day: Day 1
+  title: Introduction and Foundations
+  sessions:
+    - time: "09:00"
+      topic: Opening lecture
+    - time: "11:00"
+      topic: Tutorial session
+
+- day: Day 2
+  title: Advanced Topics
+  sessions:
+    - time: "09:00"
+      topic: Keynote
+    - time: "14:00"
+      topic: Hands-on workshop
