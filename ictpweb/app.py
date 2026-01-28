@@ -1,4 +1,6 @@
 import streamlit as st
+import base64
+from PIL import Image
 
 st.set_page_config(
     page_title="International School on Statistical Inference from Biological Data",
@@ -6,13 +8,32 @@ st.set_page_config(
     layout="wide",
 )
 
+header_image = Image.open("assets/images/banner_escuela_simbad.png")  # reemplaza con tu archivo
+
+# Mostrar la imagen a ancho completo
+st.image(header_image, use_column_width=True)
+
+
+
+
+
+
+
+
+
+
+
 st.title("❄️ International School on Statistical Inference from Biological Data")
 st.markdown(
     """
     Welcome to the website of the **ICTP International School on Statistical Inference from Biological Data**.
     This platform provides information about the program, topics, lecturers, and speakers.
     
-    You can visit the official school page [here](https://indico.ictp.it/event/11113).
+    📅 **Dates:** February 2-13, 2026  
+    📍 **Location:** Physics Faculty, Havana University, Havana, Cuba \\
+    🔗 **Webpage:** You can visit the official school page [here](https://indico.ictp.it/event/11113).
+    
+    
     Use the sidebar to navigate through the sections.
 
     DESCRIPTION:
@@ -44,3 +65,55 @@ def load_css(path: str):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 load_css("assets/styles/custom.css")
+
+# Cargar imágenes de los logos
+logo1 = Image.open("assets/images/scf.jpg")
+logo2 = Image.open("assets/images/image.png")
+logo3 = Image.open("assets/images/Logo CSC.jpg")
+logo4 = Image.open("assets/images/UH.jpg")
+
+# Crear columnas según cantidad de logos
+cols = st.columns(4)  # 4 logos, una columna por logo
+# Mostrar cada logo en su columna
+cols[0].image(logo3, width=100)
+cols[1].image(logo2, width=100)
+cols[2].image(logo1, width=100)
+cols[3].image(logo4, width=100)
+pdf_path = "assets/posters/winter_school_poster.pdf"
+
+def display_pdf(path: str, width: int = 700, height: int = 900):
+    """
+    Embed a PDF file in the Streamlit app.
+
+    Parameters
+    ----------
+    path : str
+        Path to the PDF file.
+    width : int
+        Width of the embedded viewer.
+    height : int
+        Height of the embedded viewer.
+    """
+    with open(path, "rb") as f:
+        base64_pdf = base64.b64encode(f.read()).decode("utf-8")
+
+    pdf_display = f"""
+        <iframe
+            src="data:application/pdf;base64,{base64_pdf}"
+            width="{width}"
+            height="{height}"
+            type="application/pdf">
+        </iframe>
+    """
+
+    st.markdown(pdf_display, unsafe_allow_html=True)
+
+
+display_pdf(pdf_path)
+
+st.download_button(
+    label="📄 Download poster (PDF)",
+    data=open(pdf_path, "rb"),
+    file_name="Winter_School_2026_Poster.pdf",
+    mime="application/pdf",
+)
