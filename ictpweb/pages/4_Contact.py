@@ -10,7 +10,7 @@ st.image(header_image, use_column_width=True)
 # =====================================================
 # Contact Section
 # =====================================================
-st.header("Contact")
+st.header("🧬 Contact")
 
 st.markdown(
     """

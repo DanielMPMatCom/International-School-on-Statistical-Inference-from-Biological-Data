@@ -1,13 +1,16 @@
 - lecturers:
-    - name: Carla Bosia
-      affiliation: Politecnico di Torino
+    - topic: microRNAs
+      name:  Carla Bosia
       country: Italy
+      affiliation: Politecnico di Torino
+      
   lectures:
     - title: Ultrasensitivity from resource competition
       subtitle: microRNAs as a case study
 
 - lecturers:
     - name: Daniele De Martino
+      topic: Metabolism
       affiliation: Biofisika Institute - Ikerbasque
       country: Spain
   lectures:
@@ -20,6 +23,7 @@
 
 - lecturers:
     - name: C. Enrico-Bena
+      topic: Mutations
       affiliation: INRAE
       country: France
   lectures:
@@ -32,6 +36,7 @@
 
 - lecturers:
     - name: J. Fernandez-de-Cossio-Diaz
+      topic: Representation Learning
       affiliation: Université Paris-Saclay
       country: France
   lectures:
@@ -44,6 +49,7 @@
 
 - lecturers:
     - name: L. Ferretti
+      topic: Epidemics
       affiliation: Oxford University
       country: UK
   lectures:
@@ -56,6 +62,7 @@
 
 - lecturers:
     - name: A. Fuentes-Hernandez
+      topic: Evolutionary dynamics
       affiliation: UNAM
       country: Mexico
   lectures:
@@ -69,6 +76,7 @@
 - lecturers:
     - name: F. di Lauro
       affiliation: Oxford University
+      topic: Epidemics on networks
       country: UK
   lectures:
     - label: Lecture I
@@ -79,6 +87,7 @@
 
 - lecturers:
     - name: C. Lucibello
+      topic: Diffusion models
       affiliation: Bocconi University
       country: Italy
   lectures:
@@ -91,6 +100,7 @@
 
 - lecturers:
     - name: A. Pagnani
+      topic: Protein language models
       affiliation: Politecnico di Torino
       country: Italy
   lectures:
@@ -103,6 +113,7 @@
 
 - lecturers:
     - name: D. Thieffry
+      topic: Transcriptomics networks
       affiliation: ENS
       country: France
     - name: L. Martignetti
@@ -117,6 +128,7 @@
 - lecturers:
     - name: M. Weigt
       affiliation: Sorbonne University
+      topic: Statistical mechanics of protein sequences
       country: France
     - name: F. Calvanese
       affiliation: Sorbonne University

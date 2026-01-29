@@ -8,7 +8,7 @@ header_image = Image.open("assets/images/banner_escuela_simbad.png")  # reemplaz
 st.image(header_image, use_column_width=True)
 
 # Título de la página
-st.title("Logistics - Winter School Havana")
+st.title("🧬 Logistics")
 
 # =====================================================
 # Accommodation Section

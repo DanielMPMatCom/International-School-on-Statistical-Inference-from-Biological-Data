@@ -8,13 +8,15 @@ header_image = Image.open("assets/images/banner_escuela_simbad.png")  # reemplaz
 # Mostrar la imagen a ancho completo
 st.image(header_image, use_column_width=True)
 
-st.header("Speakers and Lectures")
+st.header("🧬 Lectures")
 lecture_blocks = load_yaml("data/lectures.yaml")
 
 for block in lecture_blocks:
     # Construir encabezado con speakers
     header = ", ".join(
-        f"{l['name']} ({l.get('affiliation', '')})"
+        f"**{l['topic']}** *({l.get('name', '')}, {l.get('affiliation', '')})*"
+        if "name" in l and "topic" in l and "affiliation" in l
+        else f"{l['name']}  ({l.get('affiliation', '')})"
         if "affiliation" in l
         else l["name"]
         for l in block["lecturers"]

@@ -9,7 +9,7 @@ header_image = Image.open("assets/images/banner_escuela_simbad.png")  # reemplaz
 # Mostrar la imagen a ancho completo
 st.image(header_image, use_column_width=True)
 
-st.header("Program")
+st.header("🧬 Program")
 
 program = load_yaml("data/program.yaml")
 # aliases = load_yaml("data/speaker_aliases.yaml")
